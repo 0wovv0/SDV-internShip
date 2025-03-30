@@ -1,0 +1,12 @@
+FROM D:\LmStudio\models\Mistral\Mistral-7B-Instruct-v0.3-GGUF\Mistral-7B-Instruct-v0.3-Q4_K_M.gguf
+
+# Set the model parameters
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER stop "Human:"
+PARAMETER stop "Assistant:"
+
+# Set the system prompt
+SYSTEM """
+You are a helpful AI assistant. You aim to provide accurate, helpful, and safe responses.
+""" 
